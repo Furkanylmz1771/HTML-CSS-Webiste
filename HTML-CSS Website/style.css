@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+    .navbar{
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(34, 34, 114);
+
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+
+    }
+
+    ul li{
+        padding: 10px;
+        
+    }
+
+    ul li a{
+        color: yellow;
+        text-decoration: none;
+    }
+
+    ul li:hover{
+        background-color: blue;
+
+    }
+
+    img{
+        height: 25px;
+        border-radius: 1px;
+    }   
+
+  .erkek{
+     position: absolute;
+     left: 510px;
+      
+  }
+  .kadın{
+      position: absolute;
+      left:615px;
+  }
+  .cocuk{
+    position: absolute;
+    left:720px
+  }
+
+
+
+
+    .urun{
+        width: 33%;
+        border: 1px solid black;
+        text-align: center;
+    }
+   
+
+    .resim{
+        height: 300px;
+    }
+
+    .ur{
+        position: relative;     /* Kutu içersinde hareket edebilmesi için kllnılır.*/
+    }
+
+    .ur span{
+        background-color: yellow;
+        color: blue;
+        padding: 8px;
+        font-weight: bolder;
+        position: absolute;              /* Yer değiştirmesi için kullanılır.*/
+        left: 0; 
+     }                  
+
+    h2{
+        padding: 17px;
+    }
+
+    .katalog{
+        display: flex; 
+        flex-wrap: wrap;                   /* Taşma olmasın 4. koyunca sıkıştırma alt satıra koy*/
+ 
+    } 
+
+    @media(max-width:768px) {
+        .katalog{
+            flex-direction: column;        /* 768 px olduğunda alt alta hizalansın */
+        }
+        .urun{
+        width: 100%;
+        }                                  /*  768 px olduğunda sayfayı %100 kaplasın */                  
+    
+    }
+
+    p{
+        font-family:sans-serif;
+    }
+
+
+    
